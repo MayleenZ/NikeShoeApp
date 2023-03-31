@@ -11,9 +11,9 @@ function Home() {
       </div>
       <h1 id="collection">Enjoy our 2023 collection</h1>
       <div className="home">
-        <img className = "home-shoes" src={nikeData[3].image} />
-        <img className = "home-shoes" src={nikeData[4].image} />
-        <img className = "home-shoes"  src={nikeData[5].image} />
+        <img className = "home-shoes" src={nikeData[3].image} alt = "shoe"/>
+        <img className = "home-shoes" src={nikeData[4].image} alt = "shoe"/>
+        <img className = "home-shoes"  src={nikeData[5].image} alt = "shoe"/>
       </div>
       <div className = "shoe-name">
         <p className = "shoe-name">{nikeData[3].name}</p>

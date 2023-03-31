@@ -21,7 +21,7 @@ function Header() {
           <div className = "shoe-receipt">
               <p>{id}. {shoe.name} ${shoe.price} </p>
               <div>
-              <img className = "all-shoes" src = {shoe.image} />
+              <img className = "all-shoes" src = {shoe.image} alt = "shoe"/>
               </div>
           </div>
         );
