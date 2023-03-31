@@ -18,13 +18,15 @@ function ProductListItem(props) {
     // using the spread operator to spread whhat is in the cart at the moment and adding the product at the end of the array
     // spreading products and adding it to the cart in an array.
     //destructured the cart 
+    console.log(product);
+    console.log(cart);
   }
   return (
-    <div>
-      <h3>{product.name}</h3>
-      <img src={product.image} width="200" alt={product.name} />
-      <p>{product.description}</p>
-      <p>Price: ${product.price}</p>
+    <div className = "shoes">
+      <h3 id="name">{product.name}</h3>
+      <img className = "all-shoes" src={product.image} width="200" alt={product.name} />
+      <p id="shoe-content">{product.description}</p>
+      <p id="price">Price: ${product.price}</p>
       <button onClick={handleAddToCart}>Add to Cart</button>
       {/* defining an arrow function and saying when there is an onclick event, call anonymous function that will addtocart the product, when there is just one thing to do an arrow function will be used */}
     </div>

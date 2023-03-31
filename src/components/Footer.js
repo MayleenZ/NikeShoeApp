@@ -1,19 +1,22 @@
 function Footer() {
   return (
-    <footer style= {{display:'flex', justifyContent: 'space-between'}}>
+    <footer>
       <section>
         <h3>Social Media</h3>
-        <a>Facebook</a>
-        <br></br>
-        <a>Instagram</a>
+        <div className = "social">
+        <p>Facebook</p> 
+        <p>Instagram</p>
+        </div>
       </section>
       
       <section>
         <h3>Services and Terms</h3>
+        <p>Copyright 2023</p>
       </section>
 
       <section>
         <h3>Contact Us</h3>
+        <p>nike1@email.com</p>
       </section>
     </footer>
   );
