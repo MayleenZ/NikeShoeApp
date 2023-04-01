@@ -10,7 +10,7 @@ function Header() {
   }
   return (
     <header>
-      <div className = "receipt">
+      <div>
       <p id="cart">Cart: {cart.length > 0 ? cart.length : null}</p>
       {cart.map((shoe) => {
         if (shoe.price) {

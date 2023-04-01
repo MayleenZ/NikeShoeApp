@@ -27,7 +27,7 @@ function ProductListItem(props) {
       <img className = "all-shoes" src={product.image} width="200" alt={product.name} />
       <p id="shoe-content">{product.description}</p>
       <p id="price">Price: ${product.price}</p>
-      <button onClick={handleAddToCart}>Add to Cart</button>
+      <button id = "addcart-btn"onClick={handleAddToCart}>Add to Cart</button>
       {/* defining an arrow function and saying when there is an onclick event, call anonymous function that will addtocart the product, when there is just one thing to do an arrow function will be used */}
     </div>
   );

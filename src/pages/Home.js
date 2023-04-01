@@ -6,7 +6,7 @@ function Home() {
       <div className = "search-input">
       <input placeholder="Search for Shoes"></input>
       <button id="btn-submit" type="submit">
-        Submit
+        Search
       </button>
       </div>
       <h1 id="collection">Enjoy our 2023 collection</h1>

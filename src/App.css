@@ -3,7 +3,7 @@
   color: white;
 }
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav {
@@ -22,7 +22,7 @@ a:hover {
   color: rgb(226, 226, 155);
 }
 
-button{
+button {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -34,16 +34,9 @@ button{
   font-size: 20px;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(226, 226, 155);
   cursor: pointer;
-}
-
-.shoes{
-  display: flex;
-  padding: 10px;
-  margin: 40px;
-  gap: 40px;
 }
 
 .title {
@@ -51,17 +44,7 @@ button:hover{
   padding: 30px;
   text-transform: uppercase;
   text-shadow: 1px 1px 0px rgb(113, 101, 101);
-  font-size: 50px;
-}
-
-.all-shoes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  width: 200px;
-  height: 200px;
-  margin-top: 10px;
+  font-size: 40px;
 }
 
 .nike-img {
@@ -70,49 +53,57 @@ button:hover{
   margin-left: 60px;
 }
 
-#shoe-content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
+.shoes {
+  display: flex;
+  padding: 10px;
+  margin: 40px;
+  align-items: center;
+  gap: 10px;
 }
 
-#shoe-content:hover{
-  color:rgb(226, 226, 155);
+.all-shoes {
+  border-radius: 15px;
+  width: auto;
+  height: 200px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+#shoe-content {
+  width: 500px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+#shoe-content:hover {
+  color: rgb(226, 226, 155);
 }
 
 #price{
   line-height: 35px;
   margin-top: 80px;
+  font-weight: bold;
+  margin-left: auto;
 }
 
 #name{
   margin-top: 80px;
-}
-
-.receipt{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 50px;
-  font-size: 30px;
-  line-height: 5px;
-  width: auto;
-}
+} 
 
 #cart{
-  margin-left: 20px;
-  font-size: 40px;
-  margin-top: -20px;
+  font-size: 24px;
+  margin-left: 70px;
 }
 
-footer{
+
+
+footer {
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
 
-
-#btn-submit{
+#btn-submit {
   display: flex;
   justify-content: center;
   width: 80px;
@@ -120,6 +111,18 @@ footer{
   text-align: center;
   margin-left: 10px;
   margin-top: -3px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#addcart-btn {
+  font-size: 15px;
+  height: 55px;
+  margin-left: auto;
+}
+
+#addcart-btn:hover {
+  font-weight: bold;
 }
 
 input {
@@ -139,7 +142,7 @@ input {
 #collection {
   margin-left: 100px;
   padding: 15px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .social {
@@ -149,7 +152,7 @@ input {
 }
 
 .home-shoes {
-  width: 300px;
+  width: 400px;
   border-radius: 10px;
 }
 
@@ -165,19 +168,21 @@ input {
   display: flex;
   gap: 160px;
   justify-content: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #total-price {
-  color:rgb(248, 248, 112);
+  color: rgb(248, 248, 112);
+  font-size: 30px;
 }
-
 
 #clear-btn {
   display: absolute;
   margin-left: 5px;
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 30px;
 }
 
 .shoe-receipt {
@@ -188,10 +193,10 @@ input {
   align-items: center;
   background-color: rgba(239, 239, 239, 0.081);
   border-radius: 10px;
-
+  font-size: 25px;
 }
 
-.price-clearbtn{
+.price-clearbtn {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
