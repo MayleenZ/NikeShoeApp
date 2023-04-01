@@ -12,7 +12,7 @@ import Checkout from "./pages/Checkout";
 export const ProductContext = createContext(null)
 
 function App() {
-  const [data] = useState(nikeData);
+  const [data, setData] = useState(nikeData);
   // expecting data to change that is why we use a useState, expecing user's to add more products , remove or update
   const [cart, setCart] = useState([]);
   // define it in an array to define different items
