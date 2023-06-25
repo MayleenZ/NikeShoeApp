@@ -8,19 +8,19 @@ function ProductListItem(props) {
 //Consume the context 
   const productContextValue = useContext(ProductContext);
   const {cart, setCart} = productContextValue;
-  //update function to use correct values from product context value 
+  //update function to use correct values from product context value. 
   //destructured to seperate variables instead of doing productContextValue.cart and so on 
   // console.log(productContextValue);
 
-
   const handleAddToCart = () => {
     setCart([...cart, product]);
-    // using the spread operator to spread whhat is in the cart at the moment and adding the product at the end of the array
+    // using the spread operator to spread what is in the cart at the moment and adding the product at the end of the array.
     // spreading products and adding it to the cart in an array.
     //destructured the cart 
     console.log(product);
     console.log(cart);
   }
+
   return (
     <div className = "shoes">
       <h3 id="name">{product.name}</h3>

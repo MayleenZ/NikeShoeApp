@@ -8,6 +8,7 @@ function Header() {
   const refreshPage = () => {
     window.location.reload(false)
   }
+  
   return (
     <header>
       <div>
