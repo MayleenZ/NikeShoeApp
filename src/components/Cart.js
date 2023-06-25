@@ -3,10 +3,11 @@ import { ProductContext } from "../App";
 
 function Header() {
   const productContextValue = useContext(ProductContext);
-  const { cart } = productContextValue;
+  const { cart , setCart} = productContextValue;
   let totalPrice = 0;
-  const refreshPage = () => {
-    window.location.reload(false)
+
+  function clearCart(){
+    setCart([])
   }
   
   return (
@@ -29,7 +30,7 @@ function Header() {
       <div className = "price-clearbtn">
       {totalPrice > 0 && <p id="total-price">Total Price: ${totalPrice}</p>}
       {/* Add a button to clear the shopping cart  */}
-      <button id = "clear-btn" type = "submit" onClick = {refreshPage}>Clear Cart</button>
+      <button id = "clear-btn" type = "submit" onClick={clearCart}>Clear Cart</button>
       </div>
       </div>
     </header>

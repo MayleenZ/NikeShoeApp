@@ -1,16 +1,29 @@
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { nikeData } from "../data/nikeData";
 function Home() {
-  //Create handleSubmit
-  const [formData, setFormData] = useState("")
-    function handleSubmit(e){
-      e.preventDefault()
+  const navigate = useNavigate()
 
+  //Create handleSubmit
+  const [search, setSearch] = useState("")
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    // Find the index of the shoe in the nikeData array based on the user's search
+    const shoeIndex = nikeData.findIndex(
+      (shoe) => shoe.name.toLowerCase() === search.toLowerCase()
+    );
+    if (shoeIndex !== -1) {
+      // Navigate to the shoe page with the shoe's index as a URL parameter
+      navigate(`/shoes/${shoeIndex}`);
+    } else {
+      console.log("Shoe not found");
     }
+  }
   //Create handleChange 
     function handleChange(e){
-      setFormData(e.target.value)
+      setSearch(e.target.value)
       console.log(e.target.value);
     }
   return (
@@ -18,7 +31,7 @@ function Home() {
       {/* <h1 className="title">Nike</h1> */}
       <form onSubmit={handleSubmit} >
         <div className="search-input">
-          <input placeholder="Search for Shoes" value={formData} onChange={handleChange}></input>
+          <input placeholder="Search for Shoes" value={search} onChange={handleChange}></input>
           <button id="btn-submit" type="submit">
             Search
           </button>
