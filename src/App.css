@@ -1,5 +1,5 @@
 .App {
-  background-color: rgba(0, 0, 0, 0.981);
+  background-color: rgba(130, 126, 126, 0.981);
   color: white;
 }
 * {
@@ -95,7 +95,11 @@ button:hover {
   margin-left: 70px;
 }
 
-
+#shoe-not-found{
+  margin-left: 40%;
+  font-size: 25px;
+  
+}
 
 footer {
   display: flex;
@@ -112,7 +116,6 @@ footer {
   margin-left: 10px;
   margin-top: -3px;
   font-size: 15px;
-  font-weight: bold;
 }
 
 #addcart-btn {

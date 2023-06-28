@@ -29,7 +29,6 @@ function Header() {
       })}
       <div className = "price-clearbtn">
       {totalPrice > 0 && <p id="total-price">Total Price: ${totalPrice}</p>}
-      {/* Add a button to clear the shopping cart  */}
       <button id = "clear-btn" type = "submit" onClick={clearCart}>Clear Cart</button>
       </div>
       </div>
