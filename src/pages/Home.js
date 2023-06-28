@@ -7,6 +7,7 @@ function Home() {
 
   //Create handleSubmit
   const [search, setSearch] = useState("")
+  const [shoeNotFound, setShoeNotFound] = useState(false)
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -16,9 +17,11 @@ function Home() {
     );
     if (shoeIndex !== -1) {
       // Navigate to the shoe page with the shoe's index as a URL parameter
-      navigate(`/shoes/${shoeIndex}`);
+      navigate(`/shoes/`);
     } else {
-      console.log("Shoe not found");
+      setShoeNotFound(true)
+      
+      // console.log("Shoe not found");
     }
   }
   //Create handleChange 
@@ -36,6 +39,7 @@ function Home() {
             Search
           </button>
         </div>
+       {shoeNotFound && <p>Shoe Not Found</p>}
       </form>
       <h1 id="collection">Enjoy our 2023 collection</h1>
       <div className="home">

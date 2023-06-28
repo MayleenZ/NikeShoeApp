@@ -1,7 +1,7 @@
 function SearchShoe(){
     return (
         <div>
-
+            
         </div>
     )
 }
